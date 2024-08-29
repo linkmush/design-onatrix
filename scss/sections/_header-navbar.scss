@@ -1,0 +1,40 @@
+.header-navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .main-menu {
+
+            nav {
+                display: flex;
+                gap: 10px;
+
+                @include desktop {
+                    gap: 80px;
+                }
+
+                a {
+                    font-weight: 700;
+                    color: var(--color-primary);
+                    transition: 0.25s ease-in-out;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: var(--color-secondary);
+                    }
+                }
+            }
+        }
+
+        .search-icon-menu {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+    }
+}
