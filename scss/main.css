@@ -281,3 +281,88 @@ h6 {
   transition: 0.25s;
   text-decoration: none;
 }
+
+.about-us .container .about-info-boxes {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1400px) {
+  .about-us .container .about-info-boxes {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.about-us .container .about-info-boxes .about-info {
+  margin-top: 200px;
+}
+.about-us .container .about-info-boxes .about-info h3 {
+  color: var(--color-primary);
+}
+.about-us .container .about-info-boxes .about-info .signature-write {
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.about-us .container .about-info-boxes .about-form {
+  height: 572px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+@media (min-width: 1400px) {
+  .about-us .container .about-info-boxes .about-form {
+    width: 125%;
+  }
+}
+.about-us .container .about-info-boxes .about-form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.about-us .container .about-info-boxes .about-form .form-header {
+  background-color: var(--color-primary);
+}
+.about-us .container .about-info-boxes .about-form .form-header h3 {
+  padding: 30px;
+  color: var(--color-accent);
+}
+.about-us .container .about-info-boxes .about-form-text {
+  padding: 20px 20px;
+}
+.about-us .container .about-info-boxes .about-form-text form .form-group {
+  margin-bottom: 15px;
+}
+.about-us .container .about-info-boxes .about-form-text form .form-group input.form-control {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #EBEBEB;
+  border-radius: 2px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about-us .container .about-info-boxes .about-form-text form .form-group input.form-control::-moz-placeholder {
+  color: #9C9EA6;
+}
+.about-us .container .about-info-boxes .about-form-text form .form-group input.form-control::placeholder {
+  color: #9C9EA6;
+}
+.about-us .container .about-info-boxes .about-form-text form .dropdown {
+  margin-bottom: 15px;
+}
+.about-us .container .about-info-boxes .about-form-text form .dropdown #dropdownMenu2 {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--color-default);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+.about-us .container .about-info-boxes .about-form-text form .btn-secondary {
+  width: 100%;
+}
