@@ -29,6 +29,9 @@
 
         .breadcrumb {
             font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .breadcrumb-home {
                 color: var(--color-primary);

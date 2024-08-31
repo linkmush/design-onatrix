@@ -1,22 +1,15 @@
-.article-news {
-    background-color: var(--color-gray);
-
-    .alternate-background {
-        background-color: var(--color-new); /* Ersätt med den nya bakgrundsfärgen */
-    }
+.service-news {
+    background-color: var(--color-light);
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        h6 {
-            margin-top: 80px;
-        }
-
         h3 {
             text-align: center;
             color: var(--color-primary);
+            margin-top: 80px;
         }
 
         .grid-container {
@@ -63,6 +56,36 @@
                     }
                 }
 
+            }
+        }
+
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+
+            .prev {
+                color: #EAEAEA;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--color-default);
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                &.page-number {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 2px solid #ECECEC;
+                    line-height: 40px;
+                    text-align: center;
+                }
             }
         }
     }
