@@ -1,57 +1,110 @@
 header {
-    background-color: var(--color-primary);
-    .container {
-        .header-top {
+    
+    .header-top {
+        background-color: var(--color-primary);
+        .container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            height: 49px;
 
             p {
                 color: var(--color-light);
-                margin-top: 15px;
             }
 
-            .header-icons {
-
-                display: flex;
+            .social-media {
+                display: none;
+                justify-content: center;
                 align-items: center;
-
-                a {
-                    color: #fff;
-                    text-align: center;
+                gap: 15px;
+    
+                @include desktop {
                     display: flex;
-                    align-items: center;
-                    transition: color 0.25s ease-in-out;
+                }
+                
+                .vl {
+                    border-left: 1px solid #606966;
+                    height: 100%;
+                }
 
-                    &:hover {
-                        color: var(--color-secondary);
-                        text-decoration: none;
+                .social {
+                    color: var(--color-light);
+                }
+            }
+        }
+    }
+
+    .header-menu {
+        background-color: var(--color-light);
+
+        .container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 1fr auto;
+            grid-template-areas:  "logo mobile";
+            gap: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+    
+            @include desktop {
+                grid-template-columns: auto 1fr auto;
+                grid-template-areas:  "logo menu search";
+            }
+    
+            #logo { grid-area: logo; }
+    
+            #menu {
+                grid-area: menu; 
+                display: none;
+                justify-content: center;
+                align-items: center;
+    
+                @include desktop {
+                    display: block;
+                }
+                
+                nav {
+                    display: flex;
+                    gap: 15px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+    
+                    @include desktop {
+                        gap: 80px;
+                    }
+    
+                    .menu-link {
+                        font-weight: 700;
+                        color: var(--color-primary);
+                        transition: 0.25s ease-in-out; 
+    
+                        &:hover {    
+                            color: var(--color-secondary);
+                            text-decoration: none;
+                        }
                     }
                 }
-
-                .header-facebook {
-                    border-left: 2px solid var(--color-primary-light);
-                    border-right: 2px solid var(--color-primary-light);
-                    height: 49px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-
-                .header-x {
-                    border-right: 2px solid var(--color-primary-light);
-                    height: 49px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-
-                .header-linkedin {
-                    border-right: 2px solid var(--color-primary-light);
-                    height: 49px;
-                    padding-left: 20px;
-                    padding-right: 20px;
+            }
+    
+            .search-form { 
+                grid-area: search; 
+                display: none;
+                gap: 15px;
+    
+                @include desktop {
+                    display: flex;
                 }
             }
+    
+            .btn-menu {
+                grid-area: mobile; 
+                display: block;
+    
+                @include desktop {
+                    display: none;
+                }
+            }
+
         }
     }
 }

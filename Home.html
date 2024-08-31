@@ -12,34 +12,43 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="container">
-                <div class="header-top">
+            <div class="header-top">
+                <div class="container">
                     <p>Klarabergsviadukten 90, 111 64 Stockholm</p>
-                    <div class="header-icons">
-                        <a class="header-facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="header-x" href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
-                        <a class="header-linkedin" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <div class="social-media">
+                        <div class="vl"></div>
+                        <a class="social" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <div class="vl"></div>
+                        <a class="social" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <div class="vl"></div>
+                        <a class="social" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <div class="vl"></div>
                     </div>
                 </div>
             </div>
-        </header>
+            <div class="header-menu">
+                <div class="container">
+                    <a id="logo" href="home.html"><img src="images/Brand.svg" alt="logo"></a>
 
-        <section class="header-navbar">
-            <div class="container">
-                <a class="logo-image" href="#"><img src="./images/Brand.svg" alt="logotype"></a>
-                <div class="main-menu">
-                    <nav>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact</a>
-                    </nav>
-                </div>
-                <div class="search-icon-menu">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div id="menu">
+                        <nav>
+                            <a class="menu-link" href="about.html">About</a>
+                            <a class="menu-link" href="services.html">Services</a>
+                            <a class="menu-link" href="projects.html">Projects</a>
+                            <a class="menu-link" href="contact.html">Contact</a>
+                        </nav>
+                    </div>
+    
+                    <div class="search-form">
+                        <form>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </div>
+                    
+                    <button class="btn-menu"><i class="fa-regular fa-bars"></i></button>
                 </div>
             </div>
-        </section>
+        </header>
 
         <section class="showcase-success">
             <img src="./images/sl-home2.svg" alt="image of worker">
@@ -186,6 +195,76 @@
             </div>
             <div class="light-bar"></div>
         </section>
+
+        <section class="recent-projects">
+            <div class="container">
+                <div class="project-header">
+                    <h6>OUR PROJECTS</h6>
+                    <h2>Recent projects</h2>
+                </div>
+            </div>
+            <div class="project-grid-boxes">
+                <a href="#">
+                    <div class="project-boxes">
+                        <img src="images/pj1.svg" alt="workers in meeting">
+                        <div class="project-box-text">
+                            <p class="box-header">Annual Report for Juva Inc.</p>
+                            <p class="box-text">Financial Services</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project-boxes">
+                        <img src="images/pj2.svg" alt="workers in meeting">
+                        <div class="project-box-text">
+                            <p class="box-header">Business Insights for SP Group Inc.</p>
+                            <p class="box-text">Financial Services</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project-boxes">
+                        <img src="images/pj3.svg" alt="workers in meeting">
+                        <div class="project-box-text">
+                            <p class="box-header">Financial Advisors to Irra Corp Inc.</p>
+                            <p class="box-text">Financial Services</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project-boxes">
+                        <img src="images/pj4.svg" alt="workers in meeting">
+                        <div class="project-box-text">
+                            <p class="box-header">Budget Planning for Buccura Inc.</p>
+                            <p class="box-text">Financial Services</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="logo-section">
+            <div class="container">
+                <div class="logos-box">
+                    <img src="images/01.svg" alt="logo">
+                    <img src="images/02.svg" alt="logo">
+                    <img src="images/03.svg" alt="logo">
+                    <img src="images/04.svg" alt="logo">
+                    <img src="images/05.svg" alt="logo">
+                    <img src="images/06.svg" alt="logo">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>© Onatrix. All Rights Reserved. Credits to <span>Themesflat</span></p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
